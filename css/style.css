@@ -1387,3 +1387,16 @@
   .img-rounded{
     border-radius: 30px;
   }
+
+  /* Default style (desktop) */
+.navbar-brand h6 {
+    font-size: 1rem; /* adjust if needed */
+    white-space: nowrap;
+}
+
+/* Responsive style for mobile (screen width <= 576px) */
+@media (max-width: 576px) {
+    .navbar-brand h6 {
+        font-size: 0.75rem; /* smaller font on mobile */
+    }
+}
