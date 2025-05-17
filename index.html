@@ -640,34 +640,41 @@
                     <div class="col-lg-6">
                         <h1 class="text-white mb-3">Book A Tour Deals</h1>
 
-                        <form>
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+
+                            <input type="hidden" name="access_key" value="b6445f09-72af-458e-819a-22136d769fe3" />
+                            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+
                             <div class="row g-3">
                                 <div class="col-md-12">
                                     <div class="form-floating">
                                         <input type="text" class="form-control bg-white border-0" id="name"
-                                            placeholder="Your Name">
+                                            placeholder="Your Name" name=" Your Name " required>
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-floating">
                                         <input type="email" class="form-control bg-white border-0" id="email"
-                                            placeholder="Your Email">
+                                            placeholder="Your Email" name="Your Email" required>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-white border-0" id="datetime"
+                                        <input type="number" class="form-control bg-white border-0" id="datetime"
                                             placeholder="Date & Time" data-target="#date3"
-                                            data-toggle="datetimepicker" />
+                                            data-toggle="datetimepicker" name="Mobile No" required/>
                                         <label for="datetime">Your Number</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <textarea class="form-control bg-white border-0" placeholder="Special Request"
-                                            id="message" style="height: 100px"></textarea>
+                                            id="message" style="height: 100px" name="Message" required></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>
